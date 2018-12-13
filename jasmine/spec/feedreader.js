@@ -15,7 +15,6 @@ $(function() {
          * allFeeds variable has been defined and that it is not
          * empty.
           */
-
         it('are defined', function() {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).not.toBe(0);
@@ -112,6 +111,6 @@ $(function() {
         /* The final 'New Feed Selection' suite ensures that when a new feed
         is loaded by the loadFeed (asynchronous) function that the content
         actually changes. The test compares the first and second feeds' content
-        to check to see if their contact is different. 
+        to check to see if their contact is different.
          */
 }());
