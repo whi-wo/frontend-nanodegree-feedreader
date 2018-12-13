@@ -79,9 +79,8 @@ $(function() {
         });
 
       it('at least one entry is added', function () {
-        const feed = document.querySelector('.entry-link');
-        let feedsize = feed.children.length;
-        expect(feedsize).toBeGreaterThan(0);
+        const feed = document.querySelectorAll('.feed .entry');
+        expect(feed.length).toBeGreaterThan(0);
       });
 
     });
