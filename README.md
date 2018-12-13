@@ -37,7 +37,7 @@ Testing is an important part of the development process and many organizations p
 - [Jasmine](http://jasmine.github.io/)
 - [Google Fonts](https://fonts.google.com/) - Font library
 - [handlebars](https://handlebarsjs.com/)
-- [jQuery] (https://jquery.com/)
+- [jQuery](https://jquery.com/)
 
 ## Contributing
 
