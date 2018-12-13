@@ -32,6 +32,13 @@ Detailed in-line comments accompany each test script, in addition to the followi
 
 Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development." I've learned how to create test scripts for an existing application and have sharpened my skills to understand the challenge of understanding underlying business logic of the application as well as event handling and DOM manipulation. I've also learned that good tests provide the skills to analyze whether new code breaks an existing feature without the tedious task of manually testing all functionality. This was a great step in becoming more familiar was _red, green, refactor_ approach.
 
+## Dependencies
+
+- [Jasmine](http://jasmine.github.io/)
+- [Google Fonts](https://fonts.google.com/) - Font library
+- [handlebars](https://handlebarsjs.com/)
+- [jQuery] (https://jquery.com/)
+
 ## Contributing
 
 Feedback for this project is highly encouraged. Please submit a pull request or contact me with questions. Thanks for taking a look at this project.
