@@ -87,29 +87,30 @@ $(function() {
         /* The 'Initial Entries' test suite ensures that
           there is at least one single .entry element within the .feed container
           once the asynchronous loadFeed() has completed.
-         */
+		*/
 
     describe("New Feed Selection", function (){
         let feedOne,
             feedTwo;
 
-      beforeEach(done => {
+      beforeEach(function(done) {
           loadFeed(0, function (){
-            feedOne = $(".feed").html();
+            feedOne = document.querySelector('.feed').innerHTML;
+           
+          loadFeed(1, function() {
+			feedTwo = document.querySelector('.feed').innerHTML;
             done();
           });
-          loadFeed(1, function() {
-            feedTwo = $(".feed").html();
-            done();
-          })
       });
+	   });
+	   
       it("content changes", function(){
-        expect(feedOne === feedTwo).toBe(false);
-      });
+		expect(feedOne === feedTwo).toBe(false);
+		      });
     });
         /* The final 'New Feed Selection' suite ensures that when a new feed
         is loaded by the loadFeed (asynchronous) function that the content
         actually changes. The test compares the first and second feeds' content
-        to check to see if their contact is different.
+        to check to see if their content is different.
          */
 }());
